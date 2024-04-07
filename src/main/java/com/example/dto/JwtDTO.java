@@ -11,6 +11,7 @@ public class JwtDTO {
     private Integer id;
     private ProfileRole role;
     private String email;
+    private String username;
     public JwtDTO(Integer id) {
         this.id = id;
     }

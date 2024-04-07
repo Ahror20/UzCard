@@ -12,14 +12,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CustomUserDetails implements UserDetails {
-    private Integer id;
+    @Getter
+    private String id;
     @Getter
     private String username;
     private String password;
     private ProfileStatus status;
+    @Getter
     private ProfileRole role;
 
-    public CustomUserDetails(Integer id, String username, String password, ProfileStatus status, ProfileRole role) {
+    public CustomUserDetails(String id, String username, String password, ProfileStatus status, ProfileRole role) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -64,11 +66,4 @@ public class CustomUserDetails implements UserDetails {
         return status.equals(ProfileStatus.ACTIVE);
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public ProfileRole getRole() {
-        return role;
-    }
 }

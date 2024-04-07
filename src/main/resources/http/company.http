@@ -1,0 +1,13 @@
+### Create company
+POST localhost:8080/company/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTI0MDU0NTUsImVtYWlsIjoiYWRtaW5qb25AZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MTI0OTE4NTUsImlzcyI6IllvdXR1YmUifQ.7JrZEpMba-03qhxXwS7ZNoeluCuXg86kOSVSp39NZTlad59jQqt3YNc5I8teHHeCFHCK-Y7aBYjb-siNfL8jnQ
+
+{
+  "name": "Hayot bank",
+  "username": "hayot_bank",
+  "role": "BANK",
+  "code": "12345",
+  "address": "Mirzo Ulug`bek metoro ",
+  "password": "1212"
+}
